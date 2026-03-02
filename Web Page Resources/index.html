@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+ <html lang="en"> 
+  <head> 
+    <meta charset="utf-8"> 
+    <title>ESP32 File Manager</title> 
+    <link rel="stylesheet" href="/style.css"> 
+  </head> 
+  <body> 
+    <header> 
+      <h2>📁 ESP32 SD File Hub</h2> 
+    </header> 
+    <nav> 
+      <a href="/" class="active">Upload</a> 
+      <a href="/file">Files</a>
+      <a href="/system">System</a> 
+      <a href="/about">About</a> 
+    </nav> <section class="card"> 
+      <h3>⬆️ Upload File</h3> 
+      <form id="uploadForm" method="POST" action="/upload" enctype="multipart/form-data"> 
+        <input type="file" name="data" id="fileInput" required>
+         <button type="submit">Upload</button> 
+        </form> <div class="progress">
+          <div class="bar" id="bar">
+
+          </div>
+        </div>
+       </section> 
+       <section class="card"> 
+        <h3>📡 System Status</h3> 
+        <div id="statusBox">Loading...</div> 
+      </section> 
+
+       <!-- ✅ YouTube Video Preview Section -->
+      <section class="card">
+        <h3>🎬 ElectriTrend YouTube Gallery</h3>
+          <div class="video-gallery" id="ytGallery"></div>
+      </section>
+
+
+       <section class="card"> 
+        <h3>ESP32 Giveaway</h3> 
+              <a href="https://forms.gle/szubCUSSsW1KHBoM8" target="_blank" style="text-decoration:none; background:#0066cc; color:#fff; padding:10px 16px; border-radius:8px; transition:0.2s;">
+        Google From Link
+      </a>
+      </section> 
+
+      <script src="/script.js">
+      </script> 
+      </body> 
+      </html>

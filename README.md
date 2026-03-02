@@ -128,7 +128,11 @@ ESP32_GLOBAL_FILE_MANAGE_SERVER/
 ---
 
 <h2><a class="anchor" id="how-t-works"></a>How It Works</h2>
+
+## How It Works
+
 ```
+
 ├── ESP32 Hosts a Local Web Server
 │   └── The ESP32 runs an embedded HTTP web server that handles client requests such as file upload, download, delete, 
         and preview operations.
@@ -140,6 +144,7 @@ ESP32_GLOBAL_FILE_MANAGE_SERVER/
 ├── TUsers Access via Public URL
 │   └── Anyone with the generated public link can access the web dashboard from anywhere in the world to manage files 
         (based on system permissions).       
+
 ```
 ---
 <h2><a class="anchor" id="setup-guide"></a>Setup Guide</h2>
